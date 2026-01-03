@@ -1,0 +1,433 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Omar Sultan - IT Support Engineer</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@300;400;500;600;700&family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <!-- خلفية متحركة للشبكات -->
+    <div class="network-background">
+        <div class="network-line"></div>
+        <div class="network-line"></div>
+        <div class="network-line"></div>
+        <div class="network-node"></div>
+        <div class="network-node"></div>
+        <div class="network-node"></div>
+    </div>
+
+    <!-- زر تبديل اللغة -->
+    <div class="language-switcher">
+        <button id="langToggle" class="lang-btn">
+            <span class="lang-text">EN</span>
+            <i class="fas fa-globe"></i>
+        </button>
+    </div>
+
+    <!-- الرأس -->
+    <header>
+        <div class="container">
+            <div class="header-content">
+                <div class="header-text">
+                    <h1 data-key="name">عمر سلطان</h1>
+                    <p class="title" data-key="title">مهندس دعم فني IT | خبير أنظمة وشبكات</p>
+                    <div class="header-stats">
+                        <div class="stat">
+                            <span class="stat-number">120+</span>
+                            <span class="stat-text" data-key="stat1">مستخدم مدعوم</span>
+                        </div>
+                        <div class="stat">
+                            <span class="stat-number">50+</span>
+                            <span class="stat-text" data-key="stat2">مشروع منجز</span>
+                        </div>
+                        <div class="stat">
+                            <span class="stat-number">24/7</span>
+                            <span class="stat-text" data-key="stat3">دعم فني</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="header-profile">
+                    <div class="profile-image-container">
+                        <div class="profile-frame">
+                            <img src="https://via.placeholder.com/300x300/1a365d/ffffff?text=O+S" alt="صورة عمر سلطان" class="profile-img">
+                            <div class="profile-badge">
+                                <i class="fas fa-certificate"></i>
+                            </div>
+                        </div>
+                        <div class="profile-status">
+                            <span class="status-dot"></span>
+                            <span class="status-text" data-key="status">متاح للعمل</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- شريط التنقل -->
+    <nav>
+        <div class="container">
+            <ul class="nav-links">
+                <li><a href="#about" data-key="navAbout"><i class="fas fa-user"></i> نبذة عني</a></li>
+                <li><a href="#skills" data-key="navSkills"><i class="fas fa-cogs"></i> المهارات</a></li>
+                <li><a href="#projects" data-key="navProjects"><i class="fas fa-project-diagram"></i> المشاريع</a></li>
+                <li><a href="#contact" data-key="navContact"><i class="fas fa-envelope"></i> تواصل معي</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- المحتوى الرئيسي -->
+    <main class="container">
+        <!-- قسم عني -->
+        <section id="about" class="section glass-card">
+            <h2 class="section-title" data-key="aboutTitle">
+                <i class="fas fa-user-tie"></i>
+                <span>نبذة عني</span>
+            </h2>
+            <div class="about-content">
+                <div class="about-text">
+                    <p class="highlight" data-key="aboutIntro">
+                        <i class="fas fa-quote-right"></i>
+                        محترف في مجال تكنولوجيا المعلومات مع شغف لا ينتهي لحل المشكلات التقنية وبناء أنظمة فعالة
+                    </p>
+                    
+                    <div class="about-details">
+                        <div class="detail-card">
+                            <div class="detail-icon">
+                                <i class="fas fa-server"></i>
+                            </div>
+                            <h3 data-key="detail1Title">إدارة الأنظمة</h3>
+                            <p data-key="detail1Desc">خبرة متقدمة في إدارة Active Directory ودعم Windows Server مع تحسين أداء الأنظمة</p>
+                        </div>
+                        
+                        <div class="detail-card">
+                            <div class="detail-icon">
+                                <i class="fas fa-network-wired"></i>
+                            </div>
+                            <h3 data-key="detail2Title">حلول الشبكات</h3>
+                            <p data-key="detail2Desc">تصميم وتنفيذ حلول شبكية متكاملة مع FortiGate VPN وتبديل الفروع</p>
+                        </div>
+                        
+                        <div class="detail-card">
+                            <div class="detail-icon">
+                                <i class="fas fa-robot"></i>
+                            </div>
+                            <h3 data-key="detail3Title">الأتمتة الذكية</h3>
+                            <p data-key="detail3Desc">تطوير أنظمة أتمتة تقلل التدخل البشري وتزيد الكفاءة التشغيلية</p>
+                        </div>
+                    </div>
+                    
+                    <div class="about-mission">
+                        <h3 data-key="missionTitle">رسالتي المهنية</h3>
+                        <p data-key="missionText">
+                            أؤمن بأن التكنولوجيا ليست مجرد أدوات، بل حلول استراتيجية تحول التحديات إلى فرص. 
+                            أتخصص في بناء جسور بين الاحتياجات التقنية والأهداف العملية، 
+                            مع التركيز على الأمان، الكفاءة، والتوسع المستقبلي.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- قسم المهارات -->
+        <section id="skills" class="section glass-card">
+            <h2 class="section-title" data-key="skillsTitle">
+                <i class="fas fa-tools"></i>
+                <span>المهارات التقنية</span>
+            </h2>
+            
+            <div class="skills-grid">
+                <div class="skill-category">
+                    <h3 data-key="category1Title">
+                        <i class="fas fa-headset"></i>
+                        دعم الأنظمة
+                    </h3>
+                    <div class="skill-items">
+                        <div class="skill-item">
+                            <span class="skill-name" data-key="skill1">Active Directory</span>
+                            <div class="skill-bar">
+                                <div class="skill-level" style="width: 95%"></div>
+                            </div>
+                            <span class="skill-percent">95%</span>
+                        </div>
+                        
+                        <div class="skill-item">
+                            <span class="skill-name" data-key="skill2">Windows Server</span>
+                            <div class="skill-bar">
+                                <div class="skill-level" style="width: 90%"></div>
+                            </div>
+                            <span class="skill-percent">90%</span>
+                        </div>
+                        
+                        <div class="skill-item">
+                            <span class="skill-name" data-key="skill3">Linux Basics</span>
+                            <div class="skill-bar">
+                                <div class="skill-level" style="width: 80%"></div>
+                            </div>
+                            <span class="skill-percent">80%</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="skill-category">
+                    <h3 data-key="category2Title">
+                        <i class="fas fa-wifi"></i>
+                        الشبكات والأمان
+                    </h3>
+                    <div class="skill-items">
+                        <div class="skill-item">
+                            <span class="skill-name" data-key="skill4">FortiGate VPN</span>
+                            <div class="skill-bar">
+                                <div class="skill-level" style="width: 92%"></div>
+                            </div>
+                            <span class="skill-percent">92%</span>
+                        </div>
+                        
+                        <div class="skill-item">
+                            <span class="skill-name" data-key="skill5">TCP/IP Troubleshooting</span>
+                            <div class="skill-bar">
+                                <div class="skill-level" style="width: 88%"></div>
+                            </div>
+                            <span class="skill-percent">88%</span>
+                        </div>
+                        
+                        <div class="skill-item">
+                            <span class="skill-name" data-key="skill6">Network Switching</span>
+                            <div class="skill-bar">
+                                <div class="skill-level" style="width: 85%"></div>
+                            </div>
+                            <span class="skill-percent">85%</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="skill-category">
+                    <h3 data-key="category3Title">
+                        <i class="fas fa-cogs"></i>
+                        الأدوات والتقنيات
+                    </h3>
+                    <div class="skill-items">
+                        <div class="skill-item">
+                            <span class="skill-name" data-key="skill7">CCTV Systems</span>
+                            <div class="skill-bar">
+                                <div class="skill-level" style="width: 87%"></div>
+                            </div>
+                            <span class="skill-percent">87%</span>
+                        </div>
+                        
+                        <div class="skill-item">
+                            <span class="skill-name" data-key="skill8">Network Documentation</span>
+                            <div class="skill-bar">
+                                <div class="skill-level" style="width: 90%"></div>
+                            </div>
+                            <span class="skill-percent">90%</span>
+                        </div>
+                        
+                        <div class="skill-item">
+                            <span class="skill-name" data-key="skill9">Process Automation</span>
+                            <div class="skill-bar">
+                                <div class="skill-level" style="width: 83%"></div>
+                            </div>
+                            <span class="skill-percent">83%</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- قسم المشاريع -->
+        <section id="projects" class="section glass-card">
+            <h2 class="section-title" data-key="projectsTitle">
+                <i class="fas fa-briefcase"></i>
+                <span>أبرز المشاريع</span>
+            </h2>
+            
+            <div class="projects-showcase">
+                <div class="project-featured">
+                    <div class="project-preview">
+                        <div class="project-visual">
+                            <div class="network-diagram">
+                                <div class="node core">CORE</div>
+                                <div class="line"></div>
+                                <div class="node aggregation">AGG</div>
+                                <div class="line"></div>
+                                <div class="node access">ACCESS</div>
+                                <div class="connection"></div>
+                                <div class="connection"></div>
+                                <div class="connection"></div>
+                            </div>
+                        </div>
+                        <div class="project-info">
+                            <div class="project-badge">مشروع رئيسي</div>
+                            <h3 data-key="project1Title">تصميم شبكة مؤسسية ثلاثية الطبقات</h3>
+                            <p data-key="project1Desc">
+                                تصميم وتنفيذ بنية شبكية متكاملة لمؤسسة تضم 120 مستخدم مع فصل الطبقات (Core, Aggregation, Access) 
+                                لضمان الأداء العالي والتوسع المستقبلي.
+                            </p>
+                            <div class="project-tech">
+                                <span>Cisco</span>
+                                <span>VLAN</span>
+                                <span>QoS</span>
+                                <span>Redundancy</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="projects-grid">
+                    <div class="project-card">
+                        <div class="project-icon">
+                            <i class="fas fa-shield-alt"></i>
+                        </div>
+                        <h4 data-key="project2Title">نظام أمني متكامل</h4>
+                        <p data-key="project2Desc">تكامل أنظمة CCTV مع الشبكة الرئيسية مع ضبط صلاحيات الوصول المركزي</p>
+                    </div>
+                    
+                    <div class="project-card">
+                        <div class="project-icon">
+                            <i class="fas fa-phone-alt"></i>
+                        </div>
+                        <h4 data-key="project3Title">نشر هواتف IP</h4>
+                        <p data-key="project3Desc">تطوير حل اتصال داخلي عبر نقاط الوصول على نفس الشبكة</p>
+                    </div>
+                    
+                    <div class="project-card">
+                        <div class="project-icon">
+                            <i class="fas fa-robot"></i>
+                        </div>
+                        <h4 data-key="project4Title">أتمتة العمليات</h4>
+                        <p data-key="project4Desc">بناء نظام تحكم آلي للأنظمة الصوتية والإشعارات</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- قسم التواصل -->
+        <section id="contact" class="section glass-card">
+            <h2 class="section-title" data-key="contactTitle">
+                <i class="fas fa-comments"></i>
+                <span>تواصل معي</span>
+            </h2>
+            
+            <div class="contact-container">
+                <div class="contact-options">
+                    <div class="contact-card">
+                        <div class="contact-icon">
+                            <i class="fas fa-envelope"></i>
+                        </div>
+                        <h4 data-key="contactEmail">البريد الإلكتروني</h4>
+                        <p>eng.osultan.it@gmail.com</p>
+                        <button class="contact-btn" data-key="emailBtn" onclick="location.href='mailto:eng.osultan.it@gmail.com'">
+                            إرسال بريد
+                        </button>
+                    </div>
+                    
+                    <div class="contact-card">
+                        <div class="contact-icon">
+                            <i class="fas fa-phone"></i>
+                        </div>
+                        <h4 data-key="contactPhone">الهاتف</h4>
+                        <p>+20 106 264 1995</p>
+                        <button class="contact-btn" data-key="callBtn" onclick="location.href='tel:+201062641995'">
+                            اتصل الآن
+                        </button>
+                    </div>
+                    
+                    <div class="contact-card">
+                        <div class="contact-icon">
+                            <i class="fas fa-map-marker-alt"></i>
+                        </div>
+                        <h4 data-key="contactLocation">الموقع</h4>
+                        <p data-key="locationText">الجيزة، مصر</p>
+                        <button class="contact-btn" data-key="mapBtn">
+                            عرض على الخريطة
+                        </button>
+                    </div>
+                </div>
+                
+                <div class="contact-form-card">
+                    <h3 data-key="formTitle">أرسل رسالة مباشرة</h3>
+                    <form class="contact-form">
+                        <div class="form-group">
+                            <label for="name" data-key="formName">
+                                <i class="fas fa-user"></i>
+                                الاسم الكامل
+                            </label>
+                            <input type="text" id="name" name="name" required>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="email" data-key="formEmail">
+                                <i class="fas fa-envelope"></i>
+                                البريد الإلكتروني
+                            </label>
+                            <input type="email" id="email" name="email" required>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="subject" data-key="formSubject">
+                                <i class="fas fa-tag"></i>
+                                موضوع الرسالة
+                            </label>
+                            <input type="text" id="subject" name="subject" required>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="message" data-key="formMessage">
+                                <i class="fas fa-comment"></i>
+                                محتوى الرسالة
+                            </label>
+                            <textarea id="message" name="message" rows="4" required></textarea>
+                        </div>
+                        
+                        <button type="submit" class="submit-btn" data-key="formSubmit">
+                            <i class="fas fa-paper-plane"></i>
+                            إرسال الرسالة
+                        </button>
+                    </form>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- الفوتر -->
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-info">
+                    <h3 data-key="footerName">عمر سلطان</h3>
+                    <p class="footer-tagline" data-key="footerTag">محترف في بناء حلول تقنية ذكية</p>
+                    <p class="copyright" data-key="copyright">© 2025 جميع الحقوق محفوظة</p>
+                </div>
+                
+                <div class="footer-links">
+                    <a href="#" class="social-link">
+                        <i class="fab fa-linkedin"></i>
+                        <span>LinkedIn</span>
+                    </a>
+                    <a href="#" class="social-link">
+                        <i class="fab fa-github"></i>
+                        <span>GitHub</span>
+                    </a>
+                    <a href="#" class="social-link">
+                        <i class="fab fa-twitter"></i>
+                        <span>Twitter</span>
+                    </a>
+                </div>
+                
+                <div class="footer-contact">
+                    <p><i class="fas fa-envelope"></i> eng.osultan.it@gmail.com</p>
+                    <p><i class="fas fa-phone"></i> +20 106 264 1995</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+    
+    <script src="script.js"></script>
+</body>
+</html>
